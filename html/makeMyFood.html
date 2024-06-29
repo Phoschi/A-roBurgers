@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Make My Food</title>
+    <link rel="stylesheet" href="../css/makeMyFood.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="mobile-menu">
+                <i class="fas fa-bars" id="burger-menu"></i>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="index.html">Accueil</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="makeMyFood.html">Make my Food</a>
+                </div>
+            </div>
+            <h1><i class="fas fa-plane"></i> AéroBurgers</h1>
+            <nav class="desktop-menu">
+                <a href="index.html">Accueil</a>
+                <a href="menu.html">Menu</a>
+                <a href="makeMyFood.html">Make my Food</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="make-my-food">
+            <h2>Composez votre propre plat</h2>
+            <form id="foodForm">
+                <div class="ingredient">
+                    <label for="base">Base :</label>
+                    <select id="base" name="base">
+                        <option value="none" data-price="0">Aucun</option>
+                        <option value="rice" data-price="3">Riz - 3€</option>
+                        <option value="pasta" data-price="4">Pâtes - 4€</option>
+                        <option value="salad" data-price="3.5">Salade - 3.5€</option>
+                    </select>
+                </div>
+                <div class="ingredient">
+                    <label for="protein">Protéine :</label>
+                    <select id="protein" name="protein">
+                        <option value="none" data-price="0">Aucun</option>
+                        <option value="chicken" data-price="5">Poulet - 5€</option>
+                        <option value="beef" data-price="6">Boeuf - 6€</option>
+                        <option value="tofu" data-price="4">Tofu - 4€</option>
+                    </select>
+                </div>
+                <div class="ingredient">
+                    <label for="vegetables">Légumes :</label>
+                    <select id="vegetables" name="vegetables">
+                        <option value="none" data-price="0">Aucun</option>
+                        <option value="broccoli" data-price="2">Broccoli - 2€</option>
+                        <option value="carrot" data-price="1.5">Carotte - 1.5€</option>
+                        <option value="pepper" data-price="1.8">Poivron - 1.8€</option>
+                    </select>
+                </div>
+                <div class="ingredient">
+                    <label for="extras">Extras :</label>
+                    <select id="extras" name="extras">
+                        <option value="none" data-price="0">Aucun</option>
+                        <option value="cheese" data-price="1">Fromage - 1€</option>
+                        <option value="avocado" data-price="1.5">Avocat - 1.5€</option>
+                        <option value="egg" data-price="0.8">Oeuf - 0.8€</option>
+                    </select>
+                </div>
+            </form>
+            <div id="priceDisplay">
+                <h3>Prix total : <span id="totalPrice">0</span> €</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AéroBurgers. Tous droits réservés.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/makemyfood.js"></script>
+</body>
+</html>

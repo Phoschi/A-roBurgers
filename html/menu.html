@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Menu</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="mobile-menu">
+                <i class="fas fa-bars" id="burger-menu"></i>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="index.html">Accueil</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="makeMyFood.html">Make my Food</a>
+                </div>
+            </div>
+            <h1><i class="fas fa-plane"></i> AéroBurgers</h1>
+            <nav class="desktop-menu">
+                <a href="index.html">Accueil</a>
+                <a href="menu.html">Menu</a>
+                <a href="makeMyFood.html">Make my Food</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="menu">
+            <h2>Notre Menu</h2>
+            <div class="filter-controls">
+                <button data-filter="all">Tous</button>
+                <button data-filter="1">Burger</button>
+                <button data-filter="2">Pizza</button>
+                <button data-filter="3">Sushi</button>
+                <button data-filter="4">Ramen</button>
+            </div>
+            <div class="filter-container">
+                <div class="filtr-item" data-category="1">
+                    <a href="../image/Capture_d_écran_2024-04-18_103832-removebg-preview.png" class="menu-item lightbox" data-caption="Burger - 12€">
+                        <img src="../image/Capture_d_écran_2024-04-18_103832-removebg-preview.png" alt="Burger">
+                    </a>
+                    <p class="food-name">Burger</p>
+                    <p class="food-price">12€</p>
+                </div>
+                <div class="filtr-item" data-category="1">
+                    <a href="../image/review1.png" class="menu-item lightbox" data-caption="Burger Vegan - 14€">
+                        <img src="../image/review1.png" alt="Burger Vegan">
+                    </a>
+                    <p class="food-name">Burger Vegan</p>
+                    <p class="food-price">14€</p>
+                </div>
+                <div class="filtr-item" data-category="2">
+                    <a href="../image/Capture_d_écran_2024-04-18_103806-removebg-preview.png" class="menu-item lightbox" data-caption="Pizza - 15€">
+                        <img src="../image/Capture_d_écran_2024-04-18_103806-removebg-preview.png" alt="Pizza">
+                    </a>
+                    <p class="food-name">Pizza</p>
+                    <p class="food-price">15€</p>
+                </div>
+                <div class="filtr-item" data-category="3">
+                    <a href="../image/Capture_d_écran_2024-04-18_121845-removebg-preview.png" class="menu-item lightbox" data-caption="Sushi - 20€">
+                        <img src="../image/Capture_d_écran_2024-04-18_121845-removebg-preview.png" alt="Sushi">
+                    </a>
+                    <p class="food-name">Sushi</p>
+                    <p class="food-price">20€</p>
+                </div>
+                <div class="filtr-item" data-category="4">
+                    <a href="../image/review2.png" class="menu-item lightbox" data-caption="Ramen - 12€">
+                        <img src="../image/review2.png" alt="Ramen">
+                    </a>
+                    <p class="food-name">Ramen</p>
+                    <p class="food-price">12€</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AéroBurgers. Tous droits réservés.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Load SimpleLightbox -->
+    <script src="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.js"></script>
+    <!-- Load Filterizr -->
+    <script src="https://cdn.jsdelivr.net/npm/filterizr/dist/jquery.filterizr.min.js"></script>
+    <!-- Custom Script -->
+    <script src="../js/menu.js"></script>
+</body>
+</html>

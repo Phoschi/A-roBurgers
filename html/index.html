@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Accueil</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="mobile-menu">
+                <i class="fas fa-bars" id="burger-menu"></i>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="index.html">Accueil</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="makeMyFood.html">Make my Food</a>
+                </div>
+            </div>
+            <h1><i class="fas fa-plane"></i> AéroBurgers</h1>
+            <nav class="desktop-menu">
+                <a href="index.html">Accueil</a>
+                <a href="menu.html">Menu</a>
+                <a href="makeMyFood.html">Make my Food</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Image carousel using Swiper -->
+        <section class="swiper-container image-carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-caption="Bienvenue au Restaurant"><img src="../image/Capture_d_écran_2024-04-18_103806-removebg-preview.png" alt="Restaurant Image 1"></div>
+                <div class="swiper-slide" data-caption="Découvrez nos plats"><img src="../image/Capture_d_écran_2024-04-18_103806-removebg-preview.png" alt="Restaurant Image 2"></div>
+                <div class="swiper-slide" data-caption="Ambiance Conviviale"><img src="../image/Capture_d_écran_2024-04-18_103806-removebg-preview.png" alt="Restaurant Image 3"></div>
+            </div>
+            <!-- Navigation buttons for the image carousel -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </section>
+
+        <section class="about">
+            <h2>Our Passion for Burgers and Aviation</h2>
+            <p><strong>Welcome to AéroBurgers</strong>, where our passion for cooking meets our love of aviation. Here, each dish is a <em>culinary adventure</em>, carefully prepared to satisfy your taste buds while taking you on a journey through the skies.</p>
+            <p><strong>Our story</strong> begins with two passions: <strong>burgers</strong> and <strong>planes</strong>. We decided to merge them to create a unique experience that will delight both food lovers and aviation enthusiasts. Every burger we serve is a <strong>culinary masterpiece</strong>, inspired by planes and destinations around the world.</p>
+            <p>At AéroBurgers, we believe that cooking and aviation share a common essence: <strong>innovation</strong>, <strong>precision</strong>, and a <strong>love for detail</strong>. Our team is dedicated to providing an unforgettable experience, where every meal is an adventure and every customer is a privileged passenger.</p>
+        </section>
+
+        <!-- Reviews carousel using Swiper -->
+        <section class="reviews">
+            <h2>Customer Reviews</h2>
+            <section class="swiper-container review-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../image/review1.png" alt="Review 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../image/review2.png" alt="Review 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../image/review3.png" alt="Review 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../image/review4.png" alt="Review 4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../image/review5.png" alt="Review 5">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../image/review6.png" alt="Review 6">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../image/review7.png" alt="Review 7">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../image/review8.png" alt="Review 8">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../image/review9.png" alt="Review 9">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../image/review10.png" alt="Review 10">
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AéroBurgers. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Linking to Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

@@ -159,9 +159,6 @@ footer .social-icons a:hover {
     color: #3498db;
 }
 
-
-
-
 /*MOBILE VERSION */
 
 .mobile-menu {
@@ -187,7 +184,7 @@ footer .social-icons a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     overflow: hidden;
-    z-index: 10; /* Ensure menu is above other content */
+    z-index: 10; 
 }
 
 .mobile-menu .dropdown-menu a {
@@ -235,7 +232,7 @@ footer .social-icons a:hover {
     }
 
     .image-carousel {
-        height: 300px; /* Adjust the height for mobile to prevent overlapping */
+        height: 300px; 
     }
 
     .image-carousel .swiper-slide img {

@@ -1,36 +1,35 @@
-// Initialisation du carrousel d'images avec Swiper
 const imageSwiper = new Swiper('.image-carousel', {
-    effect: 'coverflow', // Effet de transition 'coverflow'
-    centeredSlides: true, // Les diapositives sont centrées
-    loop: true, // Boucle infinie
+    effect: 'coverflow', 
+    centeredSlides: true, 
+    loop: true, 
     navigation: {
-        nextEl: '.swiper-button-next', // Bouton de navigation suivant
-        prevEl: '.swiper-button-prev', // Bouton de navigation précédent
+        nextEl: '.swiper-button-next', 
+        prevEl: '.swiper-button-prev', 
     },
     autoplay: {
-        delay: 3000, // Délai entre les transitions automatiques (en millisecondes)
+        delay: 3000, 
     },
     breakpoints: {
         600: {
-            slidesPerView: 1, // Nombre de diapositives visibles pour les écrans de 600px et plus
+            slidesPerView: 1,
         },
     },
 });
 
-// Initialisation du carrousel des avis avec Swiper
+// Initializing the review carousel with Swiper
 const reviewSwiper = new Swiper('.review-carousel', {
-    direction: 'horizontal', // Direction de défilement horizontale
-    slidesPerView: 2, // Nombre de diapositives visibles
-    loop: true, // Boucle infinie
+    direction: 'horizontal', 
+    slidesPerView: 2, 
+    loop: true, 
     autoplay: {
-        delay: 700, // Délai entre les transitions automatiques (en millisecondes)
-        disableOnInteraction: false, // Ne pas désactiver l'autoplay lors des interactions de l'utilisateur
+        delay: 700, 
+        disableOnInteraction: false, // Don't disable autoplay on user interaction
     },
-    speed: 3000, // Vitesse de transition (en millisecondes)
+    speed: 3000, 
 });
 
-// Gestion de l'affichage du menu burger
+// Handling the display of the menu for MOBILE VERSION
 document.getElementById('burger-menu').addEventListener('click', function() {
     var menu = document.getElementById('dropdown-menu');
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block'; // Affiche ou cache le menu déroulant
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block'; 
 });
